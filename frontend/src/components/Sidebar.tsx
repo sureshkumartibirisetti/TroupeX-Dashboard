@@ -10,8 +10,14 @@ import {
   User,
   FileText,
   UserPlus,
+  ClipboardList,
   Navigation,
-  LogOut
+  LogOut,
+  CalendarDays,
+  CheckSquare,
+  UserCircle,
+  Shirt,
+  FileStack
 } from 'lucide-react';
 
 interface SidebarProps {
@@ -23,18 +29,19 @@ export const Sidebar: React.FC<SidebarProps> = ({ activeTab, setActiveTab }) => 
   const menuItems = [
     { id: 'dashboard', label: 'Dashboard', icon: LayoutDashboard },
     { id: 'profile', label: 'Profile', icon: User },
-    { id: 'scheduling', label: 'Scheduling', icon: Calendar },
+    { id: 'scheduling', label: 'Scheduling', icon: CalendarDays },
     { id: 'CrewPage', label: 'CrewPage', icon: Users },
     // { id: 'crew', label: 'Crew Management', icon: Users },  
     // { id: 'enhanced-crew', label: 'Enhanced Crew', icon: UserPlus },
     // { id: 'equipment', label: 'Equipment', icon: Package },
     // { id: 'location', label: 'Location Scouting', icon: MapPin },
-    { id: 'tasks', label: 'Tasks', icon: Calendar } ,
-    { id: "CastPage",  label: "Cast",      icon: Users }, 
-    { id: 'enhanced-location', label: 'Enhanced Locations', icon: Navigation },
-    { id: 'costume', label: 'Costume Design', icon: Video },
+    { id: 'tasks', label: 'Tasks', icon: CheckSquare } ,
+    {id:'create-callsheets',label:'Call Sheets',icon:ClipboardList},
+    { id: "CastPage",  label: "Cast",      icon: UserCircle }, 
+    { id: 'enhanced-location', label: 'Enhanced Locations', icon: MapPin },
+    { id: 'costume', label: 'Costume Design', icon: Shirt },
     { id: 'create-scripts', label: 'Create Scripts', icon: FileText },
-    { id: 'documents', label: 'Document Management', icon: FileText },
+    { id: 'documents', label: 'Document Management', icon: FileStack },
     { id: "PropPage",  label: "Props", icon: Package },
   ];
 

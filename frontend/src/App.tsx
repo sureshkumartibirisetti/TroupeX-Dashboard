@@ -4,6 +4,7 @@ import { Header } from './components/Header';
 import Dashboard  from './components/Dashboard';
 import { Profile } from './components/Profile';
 import  Scheduling  from './components/Scheduling';
+import CallSheetEditor from './components/CallSheetEditor';
 import CrewManagement from './components/CrewManagement';
 import { EnhancedCrewManagement } from './components/EnhancedCrewManagement';
 import EquipmentManagement  from './components/EquipmentManagement';
@@ -65,6 +66,8 @@ function App() {
       //   return <LocationScouting />;
       case "PropPage":
         return <PropPage />;
+      case 'create-callsheets':
+        return <CallSheetEditor />;
       case 'tasks':
         return <TasksPage />;
       case 'CastPage':
