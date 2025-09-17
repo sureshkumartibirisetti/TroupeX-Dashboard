@@ -8,7 +8,9 @@ import CrewManagement from './components/CrewManagement';
 import { EnhancedCrewManagement } from './components/EnhancedCrewManagement';
 import EquipmentManagement  from './components/EquipmentManagement';
 import  LocationScouting  from './components/LocationScouting';
+import CrewPage from './components/CrewPage';
 import PropPage from "./components/PropPage";
+import TasksPage from './components/TasksPage';
 import { EnhancedLocationScouting } from './components/EnhancedLocationScouting';
 import CastPage from './components/CastPage';
 import CostumeDesign  from './components/CostumeDesign';
@@ -51,6 +53,8 @@ function App() {
         return <Profile />;
       case 'scheduling':
         return <Scheduling />;
+      case 'CrewPage':
+        return <CrewPage />; 
       // case 'crew':
       //   return <CrewManagement />;
       // case 'enhanced-crew':
@@ -61,6 +65,8 @@ function App() {
       //   return <LocationScouting />;
       case "PropPage":
         return <PropPage />;
+      case 'tasks':
+        return <TasksPage />;
       case 'CastPage':
         return <CastPage/>;
       case 'enhanced-location':
